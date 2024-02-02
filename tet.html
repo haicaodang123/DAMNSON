@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tet.css">
+    <link rel="icon" href="Tet-images/favicon.jpg" type="image/icon">
+    
+    <title>Music Website</title>
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="navbar">
+            <img src="Tet-images/logo tết.png" class="logo">  
+            <ul>
+                <a href="https://mtpentertainment.com/artist/">
+                <button >
+                    ARTIST
+                </button></a>
+                
+                <a href="https://www.youtube.com/watch?v=Thf6-faRGI4">
+                    <button >
+                        MUSIC
+                    </button></a>
+                </button></a>
+                <a href="https://www.facebook.com/MTP.Fan">
+                    <button >
+                        MEDIA
+                    </button></a>
+                    <a href="">
+                        <button >
+                           CREATOR
+                        </button></a>
+
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left">
+                <img src="Tet-images/chúc.png" >
+                
+            </div>
+            <div class="right">
+                <p>CLICK TO PLAY</p>
+                <img src="Tet-images/chơi.png" id="icon" >
+                
+            </div>
+            
+        </div>
+        <footer>
+            Năm mới chúc Đại Ca Quân và mọi người luôn ngập tràn niềm vui, có nhiều hạnh phúc mới, mục tiêu và thành tựu mới.<br>
+            Website được thực hiện bởi Cao Đăng Tuấn Tú, Lyudong, Việt Nam.
+        </footer>
+        
+        <div class="flower">
+            <img src="Tet-images/hồng.png" >
+            <img src="Tet-images/đỏ.png" >
+            <img src="Tet-images/hồng2.png" >
+            <img src="Tet-images/vàng.png" >
+        </div>
+    
+
+    </div>
+    <audio id="mysong">
+        <source src="Tet-images/nhạc tết.mp3" type="audio/mp3">
+    </audio>
+    <script>
+    var mysong = document.getElementById("mysong");
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        if(mysong.paused){
+            mysong.play();
+           icon.src = "Tet-images/dừng.png";
+        } else{ 
+            mysong.pause();
+            icon.src = "Tet-images/chơi.png";
+        } 
+    }
+    </script>
+    
+</body>
+
+</html>
